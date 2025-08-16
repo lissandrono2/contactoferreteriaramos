@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contactos de WhatsApp de la ferretería" />
+    <title>Ferretería Ramos — Contactos WhatsApp</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <style>
+        :root {
+            --brand: #f36709;
+            /* verde tipo WhatsApp */
+            --brand-2: #ca4a0f;
+            /* acentos ferretería */
+        }
+
+        body {
+            background: #f8fafb;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 14px rgba(0, 0, 0, .06);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--brand) 0%, #e4762d 60%);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero .pattern {
+            position: absolute;
+            inset: 0;
+            opacity: .09;
+            pointer-events: none;
+            background-image:
+                radial-gradient(circle at 20px 20px, #fff 2px, transparent 2px),
+                radial-gradient(circle at 60px 60px, #fff 2px, transparent 2px);
+            background-size: 80px 80px;
+        }
+
+        .contact-card {
+            transition: transform .15s ease, box-shadow .15s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 26px rgba(0, 0, 0, 0.08);
+        }
+
+        .badge-role {
+            background: var(--brand-2);
+            color: #ffffff;
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            border-color: #25D366;
+        }
+
+        .whatsapp-btn:hover {
+            background: #1fb457;
+            border-color: #1fb457;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-semibold" href="#">
+                <i class="bi bi-tools me-2 text-warning"></i>
+                <span class="text-success">FERRETERIA RAMOS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#contactos">Contactos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#horarios">Horarios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero py-5">
+        <div class="pattern"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <h1 class="display-5 fw-bold">Contacta a nuestro equipo por WhatsApp</h1>
+                    <p class="lead mb-4">Ventas, cotizaciones, compras y servicio técnico. Haz clic y chatea
+                        directamente con la persona indicada.</p>
+                    <div class="input-group input-group-lg shadow-sm" style="max-width: 560px;">
+                        <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+                        <input id="search" type="search" class="form-control"
+                            placeholder="Buscar por nombre, área o sede..." />
+                    </div>
+                    <div class="form-text text-white-50 ms-5">Ejemplo: "Cotizaciones" • "Fertilizantes" • "Compras" •
+                        "Reparaciones"
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center text-lg-end">
+                    <img src="img/fr.png" alt="Carretilla y herramientas" class="img-fluid"
+                        style="max-height: 200px; filter: drop-shadow(0 10px 30px rgba(0,0,0,.2));" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contactos -->
+    <section id="contactos" class="py-5">
+        <div class="container">
+            <div class="d-flex align-items-baseline justify-content-between mb-3">
+                <h2 class="h3 mb-0">Contactos</h2>
+                <span class="text-muted small">Haz clic en WhatsApp para escribir</span>
+            </div>
+
+            <div id="contact-list" class="row g-4">
+                <!-- ===== DUPLICA UNA "col" PARA AGREGAR MÁS CONTACTOS ===== -->
+
+
+                <!-- Eduar Meza -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card contact-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start justify-content-between">
+                                <div>
+                                    <h5 class="card-title mb-1">Atención #1</h5>
+                                    <span class="badge badge-role">Cotizaciónes * Ventas</span>
+                                </div>
+                                <i class="bi bi-person-badge fs-3 text-success"></i>
+                            </div>
+                            <p class="card-text mt-3 mb-2 small text-muted">
+                                Cotizaciones y ventas de productos ferreteros • Sede: San, Juan, Intibucá
+                            </p>
+                            <ul class="list-unstyled small mb-3 text-muted">
+                                <li><i class="bi bi-clock me-1"></i> Lun–Vie: 7:00 am – 5:00 pm</li>
+                                <br>
+                                <li><i class="bi bi-clock me-1"></i> Sab: 8:00 am – 4:00 pm</li>
+                            </ul>
+                            <div class="d-grid gap-2">
+                                <a class="btn btn-success whatsapp-btn whatsapp-link" target="_blank" rel="noopener"
+                                    data-phone="+50493504151"
+                                    data-msg="Hola Eduar, vengo de la página de la ferretería y necesito ayuda con un producto.">
+                                    <i class="bi bi-whatsapp me-1"></i> Chatear por WhatsApp
+                                </a>
+                                <a class="btn btn-outline-secondary" href="tel:+50493504151"><i
+                                        class="bi bi-telephone me-1"></i> Llamar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Roy Benitez -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card contact-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start justify-content-between">
+                                <div>
+                                    <h5 class="card-title mb-1">Atención #2</h5>
+                                    <span class="badge badge-role">Cotizaciónes * Ventas</span>
+                                </div>
+                                <i class="bi bi-person-badge fs-3 text-success"></i>
+                            </div>
+                            <p class="card-text mt-3 mb-2 small text-muted">
+                                Cotizaciones y ventas de productos ferreteros • Sede: San, Juan, Intibucá
+                            </p>
+                            <ul class="list-unstyled small mb-3 text-muted">
+                                <li><i class="bi bi-clock me-1"></i> Lun–Vie: 7:00 am – 5:00 pm</li>
+                                <br>
+                                <li><i class="bi bi-clock me-1"></i> Sab: 8:00 am – 4:00 pm</li>
+                            </ul>
+                            <div class="d-grid gap-2">
+                                <a class="btn btn-success whatsapp-btn whatsapp-link" target="_blank" rel="noopener"
+                                    data-phone="+50493504027"
+                                    data-msg="Hola Eduar, vengo de la página de la ferretería y necesito ayuda con un producto.">
+                                    <i class="bi bi-whatsapp me-1"></i> Chatear por WhatsApp
+                                </a>
+                                <a class="btn btn-outline-secondary" href="tel:+50493504027"><i
+                                        class="bi bi-telephone me-1"></i> Llamar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sandra Gomez -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card contact-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start justify-content-between">
+                                <div>
+                                    <h5 class="card-title mb-1">Atención #3</h5>
+                                    <span class="badge badge-role">Cotizaciónes * Ventas</span>
+                                </div>
+                                <i class="bi bi-person-badge fs-3 text-success"></i>
+                            </div>
+                            <p class="card-text mt-3 mb-2 small text-muted">
+                                Cotizaciones y ventas de productos ferreteros • Sede: San, Juan, Intibucá
+                            </p>
+                            <ul class="list-unstyled small mb-3 text-muted">
+                                <li><i class="bi bi-clock me-1"></i> Lun–Vie: 7:00 am – 5:00 pm</li>
+                                <br>
+                                <li><i class="bi bi-clock me-1"></i> Sab: 8:00 am – 4:00 pm</li>
+                            </ul>
+                            <div class="d-grid gap-2">
+                                <a class="btn btn-success whatsapp-btn whatsapp-link" target="_blank" rel="noopener"
+                                    data-phone="+50493504237"
+                                    data-msg="Hola Eduar, vengo de la página de la ferretería y necesito ayuda con un producto.">
+                                    <i class="bi bi-whatsapp me-1"></i> Chatear por WhatsApp
+                                </a>
+                                <a class="btn btn-outline-secondary" href="tel:+50493504237"><i
+                                        class="bi bi-telephone me-1"></i> Llamar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Allan Reyes -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card contact-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start justify-content-between">
+                                <div>
+                                    <h5 class="card-title mb-1">Atención #4</h5>
+                                    <span class="badge badge-role">Cotizaciónes * Ventas</span>
+                                </div>
+                                <i class="bi bi-person-badge fs-3 text-success"></i>
+                            </div>
+                            <p class="card-text mt-3 mb-2 small text-muted">
+                                Cotizaciones y ventas de productos ferreteros • Sede: San, Juan, Intibucá
+                            </p>
+                            <ul class="list-unstyled small mb-3 text-muted">
+                                <li><i class="bi bi-clock me-1"></i> Lun–Vie: 7:00 am – 5:00 pm</li>
+                                <br>
+                                <li><i class="bi bi-clock me-1"></i> Sab: 8:00 am – 4:00 pm</li>
+                            </ul>
+                            <div class="d-grid gap-2">
+                                <a class="btn btn-success whatsapp-btn whatsapp-link" target="_blank" rel="noopener"
+                                    data-phone="+50493504534"
+                                    data-msg="Hola Eduar, vengo de la página de la ferretería y necesito ayuda con un producto.">
+                                    <i class="bi bi-whatsapp me-1"></i> Chatear por WhatsApp
+                                </a>
+                                <a class="btn btn-outline-secondary" href="tel:+50493504534"><i
+                                        class="bi bi-telephone me-1"></i> Llamar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ledin Diaz -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card contact-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start justify-content-between">
+                                <div>
+                                    <h5 class="card-title mb-1">Atención #5</h5>
+                                    <span class="badge badge-role">Cotizaciónes * Ventas</span>
+                                </div>
+                                <i class="bi bi-person-badge fs-3 text-success"></i>
+                            </div>
+                            <p class="card-text mt-3 mb-2 small text-muted">
+                                Cotizaciones y ventas de productos ferreteros • Sede: San, Juan, Intibucá
+                            </p>
+                            <ul class="list-unstyled small mb-3 text-muted">
+                                <li><i class="bi bi-clock me-1"></i> Lun–Vie: 7:00 am – 5:00 pm</li>
+                                <br>
+                                <li><i class="bi bi-clock me-1"></i> Sab: 8:00 am – 4:00 pm</li>
+                            </ul>
+                            <div class="d-grid gap-2">
+                                <a class="btn btn-success whatsapp-btn whatsapp-link" target="_blank" rel="noopener"
+                                    data-phone="+50493505151"
+                                    data-msg="Hola Eduar, vengo de la página de la ferretería y necesito ayuda con un producto.">
+                                    <i class="bi bi-whatsapp me-1"></i> Chatear por WhatsApp
+                                </a>
+                                <a class="btn btn-outline-secondary" href="tel:+50493505151"><i
+                                        class="bi bi-telephone me-1"></i> Llamar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eriksson Hernandez -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card contact-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start justify-content-between">
+                                <div>
+                                    <h5 class="card-title mb-1">Atención #6</h5>
+                                    <span class="badge badge-role">Cotizaciónes * Ventas</span>
+                                </div>
+                                <i class="bi bi-person-badge fs-3 text-success"></i>
+                            </div>
+                            <p class="card-text mt-3 mb-2 small text-muted">
+                                Cotizaciones y ventas de productos ferreteros • Sede: San, Juan, Intibucá
+                            </p>
+                            <ul class="list-unstyled small mb-3 text-muted">
+                                <li><i class="bi bi-clock me-1"></i> Lun–Vie: 7:00 am – 5:00 pm</li>
+                                <br>
+                                <li><i class="bi bi-clock me-1"></i> Sab: 8:00 am – 4:00 pm</li>
+                            </ul>
+                            <div class="d-grid gap-2">
+                                <a class="btn btn-success whatsapp-btn whatsapp-link" target="_blank" rel="noopener"
+                                    data-phone="+50493505130"
+                                    data-msg="Hola Eduar, vengo de la página de la ferretería y necesito ayuda con un producto.">
+                                    <i class="bi bi-whatsapp me-1"></i> Chatear por WhatsApp
+                                </a>
+                                <a class="btn btn-outline-secondary" href="tel:+50493505130"><i
+                                        class="bi bi-telephone me-1"></i> Llamar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carlos Perez -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card contact-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start justify-content-between">
+                                <div>
+                                    <h5 class="card-title mb-1">Atención #7</h5>
+                                    <span class="badge badge-role">Cotizaciónes * Ventas</span>
+                                </div>
+                                <i class="bi bi-person-badge fs-3 text-success"></i>
+                            </div>
+                            <p class="card-text mt-3 mb-2 small text-muted">
+                                Cotizaciones y ventas de productos ferreteros • Sede: San, Juan, Intibucá
+                            </p>
+                            <ul class="list-unstyled small mb-3 text-muted">
+                                <li><i class="bi bi-clock me-1"></i> Lun–Vie: 7:00 am – 5:00 pm</li>
+                                <br>
+                                <li><i class="bi bi-clock me-1"></i> Sab: 8:00 am – 4:00 pm</li>
+                            </ul>
+                            <div class="d-grid gap-2">
+                                <a class="btn btn-success whatsapp-btn whatsapp-link" target="_blank" rel="noopener"
+                                    data-phone="+50493505215"
+                                    data-msg="Hola Eduar, vengo de la página de la ferretería y necesito ayuda con un producto.">
+                                    <i class="bi bi-whatsapp me-1"></i> Chatear por WhatsApp
+                                </a>
+                                <a class="btn btn-outline-secondary" href="tel:+50493505215"><i
+                                        class="bi bi-telephone me-1"></i> Llamar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RMarcos Lopez -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card contact-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start justify-content-between">
+                                <div>
+                                    <h5 class="card-title mb-1">Atención #8</h5>
+                                    <span class="badge badge-role">Cotizaciónes * Ventas</span>
+                                </div>
+                                <i class="bi bi-person-badge fs-3 text-success"></i>
+                            </div>
+                            <p class="card-text mt-3 mb-2 small text-muted">
+                                Cotizaciones y ventas de productos ferreteros • Sede: San, Juan, Intibucá
+                            </p>
+                            <ul class="list-unstyled small mb-3 text-muted">
+                                <li><i class="bi bi-clock me-1"></i> Lun–Vie: 7:00 am – 5:00 pm</li>
+                                <br>
+                                <li><i class="bi bi-clock me-1"></i> Sab: 8:00 am – 4:00 pm</li>
+                            </ul>
+                            <div class="d-grid gap-2">
+                                <a class="btn btn-success whatsapp-btn whatsapp-link" target="_blank" rel="noopener"
+                                    data-phone="+50493505307"
+                                    data-msg="Hola Eduar, vengo de la página de la ferretería y necesito ayuda con un producto.">
+                                    <i class="bi bi-whatsapp me-1"></i> Chatear por WhatsApp
+                                </a>
+                                <a class="btn btn-outline-secondary" href="tel:+50493505307"><i
+                                        class="bi bi-telephone me-1"></i> Llamar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arnold Machado -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card contact-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start justify-content-between">
+                                <div>
+                                    <h5 class="card-title mb-1">Atención #9</h5>
+                                    <span class="badge badge-role">Cotizaciónes * Ventas</span>
+                                </div>
+                                <i class="bi bi-person-badge fs-3 text-success"></i>
+                            </div>
+                            <p class="card-text mt-3 mb-2 small text-muted">
+                                Cotizaciones y ventas de productos ferreteros • Sede: San, Juan, Intibucá
+                            </p>
+                            <ul class="list-unstyled small mb-3 text-muted">
+                                <li><i class="bi bi-clock me-1"></i> Lun–Vie: 7:00 am – 5:00 pm</li>
+                                <br>
+                                <li><i class="bi bi-clock me-1"></i> Sab: 8:00 am – 4:00 pm</li>
+                            </ul>
+                            <div class="d-grid gap-2">
+                                <a class="btn btn-success whatsapp-btn whatsapp-link" target="_blank" rel="noopener"
+                                    data-phone="+50493505244"
+                                    data-msg="Hola Eduar, vengo de la página de la ferretería y necesito ayuda con un producto.">
+                                    <i class="bi bi-whatsapp me-1"></i> Chatear por WhatsApp
+                                </a>
+                                <a class="btn btn-outline-secondary" href="tel:+50493505244"><i
+                                        class="bi bi-telephone me-1"></i> Llamar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adison Argueta -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card contact-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start justify-content-between">
+                                <div>
+                                    <h5 class="card-title mb-1">Atención #10</h5>
+                                    <span class="badge badge-role">Cotizaciónes * Ventas</span>
+                                </div>
+                                <i class="bi bi-person-badge fs-3 text-success"></i>
+                            </div>
+                            <p class="card-text mt-3 mb-2 small text-muted">
+                                Cotizaciones y ventas de productos ferreteros • Sede: San, Juan, Intibucá
+                            </p>
+                            <ul class="list-unstyled small mb-3 text-muted">
+                                <li><i class="bi bi-clock me-1"></i> Lun–Vie: 7:00 am – 5:00 pm</li>
+                                <br>
+                                <li><i class="bi bi-clock me-1"></i> Sab: 8:00 am – 4:00 pm</li>
+                            </ul>
+                            <div class="d-grid gap-2">
+                                <a class="btn btn-success whatsapp-btn whatsapp-link" target="_blank" rel="noopener"
+                                    data-phone="+50493504659"
+                                    data-msg="Hola Eduar, vengo de la página de la ferretería y necesito ayuda con un producto.">
+                                    <i class="bi bi-whatsapp me-1"></i> Chatear por WhatsApp
+                                </a>
+                                <a class="btn btn-outline-secondary" href="tel:+50493504659"><i
+                                        class="bi bi-telephone me-1"></i> Llamar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Angel Benitez -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card contact-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start justify-content-between">
+                                <div>
+                                    <h5 class="card-title mb-1">Asesor de Agricultura</h5>
+                                    <span class="badge badge-role">Asesoramiento tecnico profesional en
+                                        fertiliantes</span>
+                                </div>
+                                <i class="bi bi-gear-wide-connected fs-3 text-secondary"></i>
+                            </div>
+                            <p class="card-text mt-3 mb-2 small text-muted">
+                                Asesor de Fertilizantes • Herbicidas • Ingeniero Proagro • Sede: San,
+                                Juan, Intibucá
+                            </p>
+                            <ul class="list-unstyled small mb-3 text-muted">
+                                <li><i class="bi bi-clock me-1"></i> Lun–Vie: 7:00 am – 5:00 pm</li>
+                                <br>
+                                <li><i class="bi bi-clock me-1"></i> Sab: 8:00 am – 4:00 pm</li>
+                            </ul>
+                            <div class="d-grid gap-2">
+                                <a class="btn btn-success whatsapp-btn whatsapp-link" target="_blank" rel="noopener"
+                                    data-phone="+50493504435"
+                                    data-msg="Hola, necesito soporte técnico para mi herramienta.">
+                                    <i class="bi bi-whatsapp me-1"></i> Chatear por WhatsApp
+                                </a>
+                                <a class="btn btn-outline-secondary" href="tel:+50493504435"><i
+                                        class="bi bi-telephone me-1"></i> Llamar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nixon Amaya -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card contact-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start justify-content-between">
+                                <div>
+                                    <h5 class="card-title mb-1">Taller de Reparaciones</h5>
+                                    <span class="badge badge-role">Reparación de maquinas</span>
+                                </div>
+                                <i class="bi bi-gear-wide-connected fs-3 text-secondary"></i>
+                            </div>
+                            <p class="card-text mt-3 mb-2 small text-muted">
+                                Reparación de herramientas maquinas • Mantenimiento, calibración y ajuste. • Sede: San,
+                                Juan, Intibucá
+                            </p>
+                            <ul class="list-unstyled small mb-3 text-muted">
+                                <li><i class="bi bi-clock me-1"></i> Lun–Vie: 7:00 am – 5:00 pm</li>
+                                <br>
+                                <li><i class="bi bi-clock me-1"></i> Sab: 8:00 am – 4:00 pm</li>
+                            </ul>
+                            <div class="d-grid gap-2">
+                                <a class="btn btn-success whatsapp-btn whatsapp-link" target="_blank" rel="noopener"
+                                    data-phone="+50492893834"
+                                    data-msg="Hola, necesito soporte técnico para mi herramienta.">
+                                    <i class="bi bi-whatsapp me-1"></i> Chatear por WhatsApp
+                                </a>
+                                <a class="btn btn-outline-secondary" href="tel:+50492893834"><i
+                                        class="bi bi-telephone me-1"></i> Llamar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== FIN DE EJEMPLOS ===== -->
+            </div>
+
+            <!-- <div class="alert alert-light border mt-4" role="alert">
+                <i class="bi bi-info-circle me-2"></i>
+                Para agregar más contactos, <strong>duplica</strong> una tarjeta y cambia <code>Nombre</code>,
+                <code>data-phone</code> (incluye +código de país) y <code>data-msg</code>.
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Horarios -->
+    <section id="horarios" class="py-4 bg-white border-top border-bottom">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-8">
+                    <h3 class="h5 mb-2">Horarios generales</h3>
+                    <p class="mb-0 text-muted">Lunes a sábado de 8:00 a 18:00 • Domingo cerrado. Atención sujeta a
+                        disponibilidad por sede.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#ubicacion" class="btn btn-outline-success"><i class="bi bi-geo-alt me-1"></i> Ver
+                        ubicación</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación -->
+    <section id="ubicacion" class="py-5">
+        <div class="container">
+            <h3 class="h5 mb-3">Ubicación</h3>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm">
+                        <!-- Reemplaza el src del mapa con el de tu negocio (Google Maps Embed) -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3831.541627324476!2d-88.065551984793!3d14.271941890652263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f645c420f17fc2f%3A0x8e4906d185de0487!2sCorona+Paint+Center+Ferreter%C3%ADa+Ramos!5e0!3m2!1ses!2shn!4v1692191400000!5m2!1ses!2shn"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-geo me-2 text-success"></i> San Juan, Intibucá, Barrio
+                            Independiente Frente a Carretera Internacional</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2 text-success"></i> Tel: (504) 9397-6260</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2 text-success"></i> ferreramos2007@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-white-50">
+        <div class="container small d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <span>© <span id="year"></span> Ferretería Ramos</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Pone el año actual en el footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Genera los links de WhatsApp a partir de data-*
+        function setupWhatsAppLinks() {
+            const links = document.querySelectorAll('.whatsapp-link');
+            links.forEach(a => {
+                const phone = (a.getAttribute('data-phone') || '').replace(/\s|-/g, '');
+                const msg = a.getAttribute('data-msg') || 'Hola, necesito información.';
+                const url = `https://wa.me/${encodeURIComponent(phone)}?text=${encodeURIComponent(msg)}`;
+                a.setAttribute('href', url);
+                // Accesibilidad: título descriptivo
+                a.setAttribute('title', `Chatear por WhatsApp al ${phone}`);
+            });
+        }
+        setupWhatsAppLinks();
+
+        // Búsqueda / filtro simple
+        const searchInput = document.getElementById('search');
+        searchInput.addEventListener('input', () => {
+            const q = searchInput.value.trim().toLowerCase();
+            const cols = document.querySelectorAll('#contact-list > .col-12');
+            cols.forEach(col => {
+                const text = col.textContent.toLowerCase();
+                col.style.display = text.includes(q) ? '' : 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>
